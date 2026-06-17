@@ -7,9 +7,6 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.join(__dirname),
   },
-  // @react-pdf/renderer must not be bundled — it runs as a plain Node module
-  // when generating will-draft PDFs server-side.
-  serverExternalPackages: ['@react-pdf/renderer'],
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'blanket.ae' },
