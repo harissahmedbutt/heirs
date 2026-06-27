@@ -3,7 +3,7 @@ import LegalShell from '@/components/LegalShell'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'How Covenant collects, uses and protects your personal information.',
+  description: 'How Heirs collects, uses and protects your personal information.',
   alternates: { canonical: '/privacy' },
 }
 
@@ -11,18 +11,18 @@ export default function PrivacyPage() {
   return (
     <LegalShell title="Privacy Policy" updated="16 June 2026">
       <p>
-        This Privacy Policy explains how Covenant collects, uses, shares and protects your personal
+        This Privacy Policy explains how Heirs collects, uses, shares and protects your personal
         information when you use our website, applications and services (the &ldquo;Service&rdquo;).
       </p>
       <p>
         <strong>Template notice.</strong> This document is a working template and not legal advice. It
-        should be reviewed and adapted by qualified counsel before Covenant relies on it.
+        should be reviewed and adapted by qualified counsel before Heirs relies on it.
       </p>
 
       <h2>1. Who we are</h2>
       <p>
-        Covenant is the controller of the personal information processed through the Service. For any
-        privacy question, contact us at <a href="mailto:hello@covenant.ae">hello@covenant.ae</a>.
+        Heirs is the controller of the personal information processed through the Service. For any
+        privacy question, contact us at <a href="mailto:hello@heirs.ae">hello@heirs.ae</a>.
       </p>
 
       <h2>2. Information we collect</h2>
@@ -60,7 +60,7 @@ export default function PrivacyPage() {
 
       <h2>6. Data security</h2>
       <p>
-        Your information is encrypted in transit and at rest and stored in a secure Covenant Vault.
+        Your information is encrypted in transit and at rest and stored in a secure Heirs Vault.
         Access is limited to you and the people you designate, and to authorised staff who need it to
         provide the Service.
       </p>
@@ -76,7 +76,7 @@ export default function PrivacyPage() {
       <p>
         Subject to applicable law, you may request access to, correction of, or deletion of your
         personal information, object to or restrict certain processing, and request a copy of the data
-        you provided. To exercise these rights, email <a href="mailto:hello@covenant.ae">hello@covenant.ae</a>.
+        you provided. To exercise these rights, email <a href="mailto:hello@heirs.ae">hello@heirs.ae</a>.
       </p>
 
       <h2>9. International transfers</h2>
@@ -106,7 +106,7 @@ export default function PrivacyPage() {
 
       <h2>13. Contact</h2>
       <p>
-        For any privacy question or request, email <a href="mailto:hello@covenant.ae">hello@covenant.ae</a>.
+        For any privacy question or request, email <a href="mailto:hello@heirs.ae">hello@heirs.ae</a>.
       </p>
     </LegalShell>
   )

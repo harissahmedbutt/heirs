@@ -41,7 +41,7 @@ export default async function WillDocumentPage() {
           </div>
 
           <div className="relative font-serif text-[15px] leading-relaxed text-brand-navy">
-            <p className="text-xs uppercase tracking-[0.2em] text-brand-navy/40">Covenant</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-brand-navy/40">Heirs</p>
             <h1 className="mt-1 text-3xl font-semibold">Last Will and Testament</h1>
             <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-amber-700">
               Draft for review — not yet executed
@@ -108,7 +108,7 @@ export default async function WillDocumentPage() {
             </div>
 
             <p className="mt-16 border-t border-black/10 pt-4 text-center text-[11px] text-brand-navy/45">
-              Prepared by Covenant. Covenant is not a law firm and does not provide legal advice. This document is a
+              Prepared by Heirs. Heirs is not a law firm and does not provide legal advice. This document is a
               draft for your review and is not valid until executed and registered with the relevant UAE authority.
             </p>
           </div>

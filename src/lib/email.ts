@@ -12,7 +12,7 @@ export interface Mail {
  *  - Local dev: logs to the console and writes the HTML to ./mail so emails
  *    are visible without a paid provider. */
 export async function sendEmail(mail: Mail): Promise<void> {
-  const from = process.env.EMAIL_FROM ?? 'Covenant <hello@covenant.ae>'
+  const from = process.env.EMAIL_FROM ?? 'Heirs <hello@heirs.ae>'
 
   if (process.env.RESEND_API_KEY) {
     const res = await fetch('https://api.resend.com/emails', {

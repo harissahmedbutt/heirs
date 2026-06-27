@@ -3,7 +3,7 @@ import { auth } from '@/auth'
 import { prisma } from '@/lib/prisma'
 import { DRAFT_COOKIE } from '@/lib/draft'
 
-const include = { beneficiaries: true, guardians: true, payments: true } as const
+const include = { beneficiaries: true, guardians: true, payments: true, documents: true } as const
 
 /** Resolve the active will application for this request: the signed-in user's
  *  most recent one, or the anonymous draft tied to the cov_draft cookie. */

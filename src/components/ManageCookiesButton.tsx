@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 // Must match the key used by CookieConsent.tsx
-const STORAGE_KEY = 'covenant-cookie-consent'
+const STORAGE_KEY = 'heirs-cookie-consent'
 
 export default function ManageCookiesButton() {
   const [done, setDone] = useState(false)

@@ -4,11 +4,11 @@ import type { Mail } from '@/lib/email'
 function layout(title: string, body: string): string {
   return `<div style="font-family:Georgia,'Times New Roman',serif;background:#F9F8F6;padding:32px;color:#1A1816">
   <div style="max-width:520px;margin:0 auto;background:#ffffff;border-radius:16px;padding:32px;border:1px solid rgba(0,0,0,0.05)">
-    <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#1A1816;opacity:.5;margin:0">Covenant</p>
+    <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#1A1816;opacity:.5;margin:0">Heirs</p>
     <h1 style="font-size:24px;margin:8px 0 16px;font-weight:600">${title}</h1>
     ${body}
     <p style="font-size:11px;color:#1A1816;opacity:.45;margin-top:32px;border-top:1px solid #eee;padding-top:16px">
-      Covenant is not a law firm and does not provide legal advice.
+      Heirs is not a law firm and does not provide legal advice.
     </p>
   </div>
 </div>`
@@ -23,7 +23,7 @@ const P = 'font-size:15px;line-height:1.6;margin:0 0 12px'
 export function welcomeEmail(name: string | null, appUrl: string): Mail {
   return {
     to: '',
-    subject: 'Welcome to Covenant',
+    subject: 'Welcome to Heirs',
     html: layout(
       `Welcome${name ? `, ${name}` : ''}`,
       `<p style="${P}">Your account is ready. You can pick up your will any time, on any device.</p>
@@ -36,7 +36,7 @@ export function receiptEmail(opts: { plan: string; amountFils: number; govFeeFil
   const { plan, amountFils, govFeeFils, appUrl } = opts
   return {
     to: '',
-    subject: 'Your Covenant receipt',
+    subject: 'Your Heirs receipt',
     html: layout(
       'Payment received',
       `<p style="${P}">Thank you — we&rsquo;ve received your payment for the <strong>${plan}</strong>. Our team is now preparing your will.</p>
@@ -53,7 +53,7 @@ export function receiptEmail(opts: { plan: string; amountFils: number; govFeeFil
 export function resetEmail(link: string): Mail {
   return {
     to: '',
-    subject: 'Reset your Covenant password',
+    subject: 'Reset your Heirs password',
     html: layout(
       'Reset your password',
       `<p style="${P}">We received a request to reset your password. This link expires in one hour.</p>

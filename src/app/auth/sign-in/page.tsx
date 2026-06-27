@@ -4,7 +4,7 @@ import SignInForm from '@/components/SignInForm'
 
 export const metadata: Metadata = {
   title: 'Log in',
-  description: 'Log in to Covenant to manage your UAE will and documents.',
+  description: 'Log in to Heirs to manage your UAE will and documents.',
   alternates: { canonical: '/auth/sign-in' },
 }
 
@@ -14,7 +14,7 @@ export default function SignInPage() {
       {/* Minimal header */}
       <header className="flex items-center justify-center px-6 py-6">
         <Link href="/" className="select-none font-serif text-[26px] font-semibold tracking-tight text-brand-navy">
-          covenant
+          heirs
         </Link>
       </header>
 

@@ -32,6 +32,7 @@ model WillApplication {
   beneficiaries Beneficiary[]
   guardians     Guardian[]
   payments      Payment[]
+  documents     WillDocument[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -79,6 +80,8 @@ model User {
   image         String?
   // Set for email/password accounts; null for OAuth-only users.
   passwordHash  String?
+  // "user" | "admin" — admins can access /ops and upload vault documents.
+  role          String            @default("user")
   accounts      Account[]
   sessions      Session[]
   applications  WillApplication[]
@@ -133,4 +136,18 @@ model Article {
   publishedAt     DateTime?
   createdAt       DateTime  @default(now())
   updatedAt       DateTime  @updatedAt
+}
+
+// A file the ops team has uploaded for a will application: the will draft PDF,
+// its Arabic translation, or the final registration certificate. The file bytes
+// live in the encrypted vault (S3-compatible storage); storageKey is the object
+// key. Never expose storageKey directly — always serve through /api/vault/[id].
+model WillDocument {
+  id            String          @id @default(cuid())
+  application   WillApplication @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  applicationId String
+  // "will-draft" | "arabic-translation" | "registration-certificate"
+  kind          String
+  storageKey    String          @unique
+  createdAt     DateTime        @default(now())
 }

@@ -52,13 +52,20 @@ export default async function DashboardPage() {
   const rec = app.recommendation ? (JSON.parse(app.recommendation) as Recommendation) : null
   const hasDetails = !!app.details
   const paid = app.payments.some((p) => p.status === 'paid')
+  const documents = app.documents ?? []
+
+  const DOC_LABEL: Record<string, string> = {
+    'will-draft': 'Will draft (PDF)',
+    'arabic-translation': 'Arabic translation',
+    'registration-certificate': 'Registration certificate',
+  }
 
   return (
     <main className="min-h-screen bg-brand-cream">
       <header className="border-b border-black/5">
         <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-5">
           <Link href="/" className="font-serif text-2xl font-semibold text-brand-navy">
-            covenant
+            heirs
           </Link>
           <div className="flex items-center gap-4">
             <span className="rounded-full bg-brand-navy/5 px-3 py-1 text-xs font-medium text-brand-navy/70">
@@ -190,6 +197,27 @@ export default async function DashboardPage() {
               )}
             </div>
 
+            {/* Documents — shown once the ops team has uploaded files */}
+            {documents.length > 0 && (
+              <div className="mt-8 rounded-brand border border-black/5 bg-white p-6">
+                <p className="text-sm font-semibold text-brand-navy">Your documents</p>
+                <ul className="mt-4 divide-y divide-black/5">
+                  {documents.map((d) => (
+                    <li key={d.id} className="flex items-center justify-between py-3 text-[15px]">
+                      <span className="text-brand-navy">{DOC_LABEL[d.kind] ?? d.kind}</span>
+                      <a
+                        href={`/api/vault/${d.id}`}
+                        download
+                        className="text-[13px] font-medium text-brand-navy underline underline-offset-2 hover:text-brand-navy/70"
+                      >
+                        Download
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             {/* Why */}
             <div className="mt-8">
               <h3 className="font-serif text-xl text-brand-navy">Why this is right for you</h3>
@@ -228,7 +256,7 @@ export default async function DashboardPage() {
         </div>
 
         <p className="mt-8 text-center text-xs text-brand-navy/40">
-          Covenant is not a law firm and does not provide legal advice.
+          Heirs is not a law firm and does not provide legal advice.
         </p>
       </div>
     </main>

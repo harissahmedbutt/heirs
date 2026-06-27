@@ -1,19 +1,19 @@
 # Local Postgres for development (matches the production database engine).
 # Start it with:  docker compose up -d
 # Then set DATABASE_URL in .env.local to:
-#   postgresql://covenant:covenant@localhost:5432/covenant
+#   postgresql://heirs:heirs@localhost:5432/heirs
 services:
   db:
     image: postgres:16
     restart: unless-stopped
     environment:
-      POSTGRES_USER: covenant
-      POSTGRES_PASSWORD: covenant
-      POSTGRES_DB: covenant
+      POSTGRES_USER: heirs
+      POSTGRES_PASSWORD: heirs
+      POSTGRES_DB: heirs
     ports:
       - '5432:5432'
     volumes:
-      - covenant_pgdata:/var/lib/postgresql/data
+      - heirs_pgdata:/var/lib/postgresql/data
 
 volumes:
-  covenant_pgdata:
+  heirs_pgdata:

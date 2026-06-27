@@ -51,10 +51,10 @@ export const PLANS: Plan[] = [
 export const TESTIMONIALS: Testimonial[] = [
   { quote: 'I just had the session with ADJD via Webex. It is all done now. The whole process was seamless from start to finish.', name: 'Beat', detail: 'UAE Will' },
   { quote: 'Smooth, responsive, efficient and cost effective in comparison to other services I researched. Highly recommended.', name: 'Phil', detail: 'Mirror Wills' },
-  { quote: 'The convenience and cost for our situation made Covenant the obvious choice. Easy to use and great support throughout.', name: 'Alan', detail: 'UAE Will' },
-  { quote: 'I reviewed the online market and Covenant came out the best — both in terms of price and the quality of service.', name: 'Jon', detail: 'Complete Package' },
+  { quote: 'The convenience and cost for our situation made Heirs the obvious choice. Easy to use and great support throughout.', name: 'Alan', detail: 'UAE Will' },
+  { quote: 'I reviewed the online market and Heirs came out the best — both in terms of price and the quality of service.', name: 'Jon', detail: 'Complete Package' },
   { quote: "Very relevant to many expats in UAE. I love the service so far — it gave us peace of mind we've needed for a while.", name: 'Tom', detail: 'UAE Will' },
-  { quote: 'The process was very straightforward. I would refer Covenant to every expat family I know in the UAE.', name: 'Michael', detail: 'Mirror Wills' },
+  { quote: 'The process was very straightforward. I would refer Heirs to every expat family I know in the UAE.', name: 'Michael', detail: 'Mirror Wills' },
   { quote: 'Great Service and Great Value. Exactly what expats need — professional, affordable, and genuinely helpful.', name: 'Ken', detail: 'Power of attorney' },
   { quote: 'Very fast and efficient thanks to them. Had our wills done and registered within two weeks of starting.', name: 'Nori', detail: 'Mirror Wills' },
 ]
@@ -71,7 +71,7 @@ export const FAQS: FAQ[] = [
       'The online questionnaire takes 10–15 minutes. We then prepare your documents within 1–2 business days. Court registration typically takes a further 1–3 weeks depending on the emirate and court.',
   },
   {
-    question: 'How much does a UAE will cost with Covenant?',
+    question: 'How much does a UAE will cost with Heirs?',
     answer:
       'Our fee starts at AED 799 for a single UAE will. Mirror wills for couples cost AED 1,199. Court fees (AED 950 per will, AED 1,900 for mirrors) are payable separately to the UAE courts — we never mark these up.',
   },

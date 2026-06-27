@@ -4,7 +4,7 @@ import SignUpForm from '@/components/SignUpForm'
 
 export const metadata: Metadata = {
   title: 'Create your account',
-  description: 'Create a Covenant account to save your UAE will and documents.',
+  description: 'Create a Heirs account to save your UAE will and documents.',
   alternates: { canonical: '/auth/sign-up' },
 }
 
@@ -13,7 +13,7 @@ export default function SignUpPage() {
     <div className="flex min-h-screen flex-col bg-brand-cream">
       <header className="flex items-center justify-center px-6 py-6">
         <Link href="/" className="select-none font-serif text-[26px] font-semibold tracking-tight text-brand-navy">
-          covenant
+          heirs
         </Link>
       </header>
 

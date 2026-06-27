@@ -27,7 +27,7 @@ export default async function CheckoutPage({
       <header className="border-b border-black/5">
         <div className="mx-auto flex max-w-xl items-center justify-between px-6 py-5">
           <Link href="/" className="font-serif text-2xl font-semibold text-brand-navy">
-            covenant
+            heirs
           </Link>
           <Link href="/will" className="text-sm text-brand-navy/60 underline underline-offset-2 hover:text-brand-navy">
             Edit details
@@ -56,7 +56,7 @@ export default async function CheckoutPage({
 
           <div className="mt-6 space-y-2 border-t border-black/5 pt-5 text-[15px]">
             <div className="flex justify-between text-brand-navy/70">
-              <span>Covenant service fee</span>
+              <span>Heirs service fee</span>
               <span>{fmtAed(amountFils)}</span>
             </div>
             <div className="flex justify-between text-brand-navy/70">

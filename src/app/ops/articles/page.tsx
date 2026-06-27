@@ -1,8 +1,7 @@
-import { redirect } from 'next/navigation'
 import { revalidatePath } from 'next/cache'
 import Link from 'next/link'
-import { auth } from '@/auth'
 import { prisma } from '@/lib/prisma'
+import { requireAdmin } from '@/lib/admin'
 import { generateArticle, togetherConfigured } from '@/lib/together'
 
 export const dynamic = 'force-dynamic'
@@ -18,8 +17,7 @@ async function uniqueSlug(base: string): Promise<string> {
 
 async function generateAction(formData: FormData) {
   'use server'
-  const session = await auth()
-  if (!session?.user) return
+  await requireAdmin()
   const topic = String(formData.get('topic') ?? '').trim()
   if (!topic) return
   const a = await generateArticle(topic)
@@ -39,8 +37,7 @@ async function generateAction(formData: FormData) {
 
 async function togglePublish(formData: FormData) {
   'use server'
-  const session = await auth()
-  if (!session?.user) return
+  await requireAdmin()
   const id = String(formData.get('id'))
   const a = await prisma.article.findUnique({ where: { id } })
   if (!a) return
@@ -55,16 +52,14 @@ async function togglePublish(formData: FormData) {
 
 async function deleteArticle(formData: FormData) {
   'use server'
-  const session = await auth()
-  if (!session?.user) return
+  await requireAdmin()
   await prisma.article.delete({ where: { id: String(formData.get('id')) } })
   revalidatePath('/ops/articles')
   revalidatePath('/blog')
 }
 
 export default async function OpsArticlesPage() {
-  const session = await auth()
-  if (!session?.user) redirect('/auth/sign-in')
+  await requireAdmin()
 
   const articles = await prisma.article.findMany({ orderBy: { updatedAt: 'desc' } })
 
@@ -73,7 +68,7 @@ export default async function OpsArticlesPage() {
       <header className="border-b border-black/5">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-5">
           <Link href="/ops" className="font-serif text-2xl font-semibold text-brand-navy">
-            covenant <span className="text-brand-navy/40">ops · articles</span>
+            heirs <span className="text-brand-navy/40">ops · articles</span>
           </Link>
           <Link href="/blog" className="text-sm text-brand-navy/60 underline underline-offset-2">
             View blog →

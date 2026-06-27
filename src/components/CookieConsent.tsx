@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
-const STORAGE_KEY = 'covenant-cookie-consent'
+const STORAGE_KEY = 'heirs-cookie-consent'
 
 export default function CookieConsent() {
   // Render nothing until mounted so server and client markup match (no hydration flash).
@@ -36,7 +36,7 @@ export default function CookieConsent() {
     >
       <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-6">
         <p className="flex-1 text-center text-[13px] leading-relaxed text-white/80">
-          Covenant uses cookies and similar technology to run and improve the site. By continuing,
+          Heirs uses cookies and similar technology to run and improve the site. By continuing,
           you consent to this and agree to our{' '}
           <Link href="/privacy" className="font-medium text-white underline underline-offset-2 hover:text-white/90">
             Privacy Policy

@@ -10,20 +10,20 @@ const FAQS: Faq[] = [
     a: 'Yes. We help residents across all seven emirates, including Dubai. Your will can be registered through the ADJD, the DIFC Wills Service or ADGM, and we recommend the right option for where you live and hold assets.',
   },
   {
-    q: 'Is Covenant only for UAE wills?',
+    q: 'Is Heirs only for UAE wills?',
     a: 'No. A UAE will is the foundation for most people, but we also arrange home-country wills for assets held abroad (UK and India today, with more on the way) and a power of attorney where it helps.',
   },
   {
-    q: 'Is Covenant a law firm?',
-    a: 'No. Covenant is an estate-planning platform, not a law firm, and we do not provide legal advice. We guide you through the process, prepare court-ready documents, and work with the relevant UAE courts for registration.',
+    q: 'Is Heirs a law firm?',
+    a: 'No. Heirs is an estate-planning platform, not a law firm, and we do not provide legal advice. We guide you through the process, prepare court-ready documents, and work with the relevant UAE courts for registration.',
   },
   {
-    q: 'Who is Covenant best for?',
+    q: 'Who is Heirs best for?',
     a: 'Expats and cross-border families in the UAE — anyone whose family, assets or wishes span more than one country and who wants clear, court-ready protection without the cost of a traditional law firm.',
   },
   {
     q: 'Who manages my case?',
-    a: 'You are assigned a dedicated Covenant expert who handles your case from start to registration, answers your questions, and tells you exactly what is needed at each step.',
+    a: 'You are assigned a dedicated Heirs expert who handles your case from start to registration, answers your questions, and tells you exactly what is needed at each step.',
   },
   {
     q: 'What happens after I pay?',
@@ -38,12 +38,12 @@ const FAQS: Faq[] = [
     a: 'No. Court fees are paid directly to the UAE courts and we never mark them up. ADJD registration is AED 950 per will (AED 1,900 for mirror wills); our service fee starts at AED 799.',
   },
   {
-    q: "What does Covenant's fee include?",
+    q: "What does Heirs's fee include?",
     a: 'A dedicated expert, your will drafted in English and Arabic where the courts require it, guidance through ADJD or ADGM submission, secure Vault storage, and an annual reminder to keep your will up to date.',
   },
   {
     q: 'What if the court asks for a change?',
-    a: 'We handle it. If the court requests an amendment during registration, your Covenant expert makes the change and resubmits at no extra service fee.',
+    a: 'We handle it. If the court requests an amendment during registration, your Heirs expert makes the change and resubmits at no extra service fee.',
   },
   {
     q: 'What if I have UK or overseas assets?',
@@ -58,7 +58,7 @@ const FAQS: Faq[] = [
     a: 'You can update or revoke your will at any time. We send annual reminders so it stays current, and updates are straightforward — usually less than the original registration.',
   },
   {
-    q: 'Why is Covenant more affordable than a traditional law firm?',
+    q: 'Why is Heirs more affordable than a traditional law firm?',
     a: 'We have turned a manual legal process into a guided online one, so you get expert-prepared, court-ready documents without paying traditional law-firm hourly rates.',
   },
   {
@@ -66,12 +66,12 @@ const FAQS: Faq[] = [
     a: 'Everything is handled online, so you can complete your will from anywhere in the UAE. If you would prefer to talk, your expert is available by chat, email or call.',
   },
   {
-    q: "Who's behind Covenant?",
-    a: 'Covenant is built by a team focused on estate planning for expats and cross-border lives, working alongside UAE-qualified legal professionals for document preparation and registration.',
+    q: "Who's behind Heirs?",
+    a: 'Heirs is built by a team focused on estate planning for expats and cross-border lives, working alongside UAE-qualified legal professionals for document preparation and registration.',
   },
   {
     q: 'Is my data secure?',
-    a: 'Yes. Everything you share is encrypted in transit and at rest, stored in a secure Covenant Vault, and only accessible to you and the people you designate. We never sell your information.',
+    a: 'Yes. Everything you share is encrypted in transit and at rest, stored in a secure Heirs Vault, and only accessible to you and the people you designate. We never sell your information.',
   },
 ]
 

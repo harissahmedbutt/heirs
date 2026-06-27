@@ -4,7 +4,7 @@ import ManageCookiesButton from '@/components/ManageCookiesButton'
 
 export const metadata: Metadata = {
   title: 'Cookie Policy',
-  description: 'How Covenant uses cookies and similar technology, and how to manage your preferences.',
+  description: 'How Heirs uses cookies and similar technology, and how to manage your preferences.',
   alternates: { canonical: '/cookies' },
 }
 
@@ -12,12 +12,12 @@ export default function CookiesPage() {
   return (
     <LegalShell title="Cookie Policy" updated="16 June 2026">
       <p>
-        This Cookie Policy explains how Covenant uses cookies and similar technology on our website and
+        This Cookie Policy explains how Heirs uses cookies and similar technology on our website and
         applications (the &ldquo;Service&rdquo;), and how you can manage your choices.
       </p>
       <p>
         <strong>Template notice.</strong> This document is a working template and not legal advice. It
-        should be reviewed and adapted by qualified counsel before Covenant relies on it.
+        should be reviewed and adapted by qualified counsel before Heirs relies on it.
       </p>
 
       <h2>What cookies are</h2>
@@ -60,7 +60,7 @@ export default function CookiesPage() {
 
       <h2>Contact</h2>
       <p>
-        Questions about cookies? Email <a href="mailto:hello@covenant.ae">hello@covenant.ae</a>.
+        Questions about cookies? Email <a href="mailto:hello@heirs.ae">hello@heirs.ae</a>.
       </p>
     </LegalShell>
   )

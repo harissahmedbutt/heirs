@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/help' },
 }
 
-const SUPPORT_EMAIL = 'hello@covenant.ae'
+const SUPPORT_EMAIL = 'hello@heirs.ae'
 
 export default function HelpPage() {
   return (

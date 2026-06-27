@@ -34,7 +34,7 @@ function extractJson(text: string): string {
   return candidate.slice(start, end + 1)
 }
 
-const SYSTEM = `You are a senior content writer for Covenant, an online estate-planning service for expats in the United Arab Emirates (covenant.ae).
+const SYSTEM = `You are a senior content writer for Heirs, an online estate-planning service for expats in the United Arab Emirates (heirs.ae).
 Write accurate, genuinely helpful, SEO- and answer-engine-optimised articles about UAE wills, inheritance, guardianship, and estate planning.
 
 Rules:
@@ -42,7 +42,7 @@ Rules:
 - Write for expats. Clear, calm, trustworthy tone. No hype.
 - Structure for search AND AI answer engines: short intro, then H2 sections phrased as the questions people actually ask, with concise, direct answers up top of each section. 800-1200 words.
 - Use markdown (## headings, lists, **bold**). Do NOT include the title as an H1 in the body.
-- Covenant is NOT a law firm and does not give legal advice — include a brief disclaimer near the end.
+- Heirs is NOT a law firm and does not give legal advice — include a brief disclaimer near the end.
 - Output ONLY a single JSON object, no prose, no code fences.`
 
 export async function generateArticle(topic: string): Promise<GeneratedArticle> {

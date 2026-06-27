@@ -3,7 +3,7 @@ import LegalShell from '@/components/LegalShell'
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'The terms that govern your use of Covenant, the estate-planning platform for expats and cross-border lives in the UAE.',
+  description: 'The terms that govern your use of Heirs, the estate-planning platform for expats and cross-border lives in the UAE.',
   alternates: { canonical: '/terms' },
 }
 
@@ -11,20 +11,20 @@ export default function TermsPage() {
   return (
     <LegalShell title="Terms of Service" updated="16 June 2026">
       <p>
-        These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use of the Covenant
+        These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use of the Heirs
         website, applications and services (together, the &ldquo;Service&rdquo;). By using the
         Service you agree to these Terms. If you do not agree, please do not use the Service.
       </p>
       <p>
         <strong>Template notice.</strong> This document is a working template and not legal advice.
-        It should be reviewed and adapted by qualified counsel before Covenant relies on it.
+        It should be reviewed and adapted by qualified counsel before Heirs relies on it.
       </p>
 
       <h2>1. Who we are</h2>
       <p>
-        Covenant is an estate-planning platform built for expats and cross-border lives in the UAE.
+        Heirs is an estate-planning platform built for expats and cross-border lives in the UAE.
         We help you understand what protection may be relevant for your situation and guide you
-        through preparing and registering documents. <strong>Covenant is not a law firm and does not
+        through preparing and registering documents. <strong>Heirs is not a law firm and does not
         provide legal advice.</strong> Where legal advice is required, you should consult a qualified
         lawyer.
       </p>
@@ -39,7 +39,7 @@ export default function TermsPage() {
       <h2>3. Your account</h2>
       <p>
         You are responsible for keeping your account credentials secure and for all activity that
-        happens under your account. Tell us promptly at <a href="mailto:hello@covenant.ae">hello@covenant.ae</a>{' '}
+        happens under your account. Tell us promptly at <a href="mailto:hello@heirs.ae">hello@heirs.ae</a>{' '}
         if you believe your account has been compromised.
       </p>
 
@@ -78,7 +78,7 @@ export default function TermsPage() {
 
       <h2>8. Intellectual property</h2>
       <p>
-        The Service, including its software, content and branding, belongs to Covenant or its
+        The Service, including its software, content and branding, belongs to Heirs or its
         licensors. We grant you a limited, non-exclusive, non-transferable licence to use the Service
         for your personal estate planning. Your documents and personal information remain yours.
       </p>
@@ -92,7 +92,7 @@ export default function TermsPage() {
       <h2>10. Disclaimers and liability</h2>
       <p>
         The Service is provided &ldquo;as is&rdquo; without warranties of any kind. To the maximum
-        extent permitted by law, Covenant is not liable for indirect, incidental or consequential
+        extent permitted by law, Heirs is not liable for indirect, incidental or consequential
         losses, and our total liability for any claim is limited to the fees you paid us for the
         relevant service.
       </p>
@@ -119,7 +119,7 @@ export default function TermsPage() {
 
       <h2>14. Contact</h2>
       <p>
-        Questions about these Terms? Email us at <a href="mailto:hello@covenant.ae">hello@covenant.ae</a>.
+        Questions about these Terms? Email us at <a href="mailto:hello@heirs.ae">hello@heirs.ae</a>.
       </p>
     </LegalShell>
   )

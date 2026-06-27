@@ -19,13 +19,13 @@ const sourceSerif = Source_Serif_4({
   display: 'swap',
 })
 
-const BASE_URL = 'https://covenant.ae'
+const BASE_URL = 'https://heirs.ae'
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'Covenant — Make your Will online | UAE Estate Planning',
-    template: '%s | Covenant',
+    default: 'Heirs — Make your Will online | UAE Estate Planning',
+    template: '%s | Heirs',
   },
   description:
     'Protect your family, assets and wishes in the UAE and beyond. Create your UAE will online in 10–15 minutes. Registered through UAE courts. Starting from AED 799.',
@@ -34,21 +34,21 @@ export const metadata: Metadata = {
     'power of attorney UAE', 'ADJD will', 'DIFC will', 'mirror wills UAE',
     'will writing Dubai', 'expat estate planning',
   ],
-  authors: [{ name: 'Covenant Technologies Ltd' }],
-  creator: 'Covenant Technologies Ltd',
-  publisher: 'Covenant Technologies Ltd',
+  authors: [{ name: 'Heirs Technologies Ltd' }],
+  creator: 'Heirs Technologies Ltd',
+  publisher: 'Heirs Technologies Ltd',
   openGraph: {
     type: 'website',
     locale: 'en_AE',
     url: BASE_URL,
-    siteName: 'Covenant',
-    title: 'Covenant — Make your Will online | UAE Estate Planning',
+    siteName: 'Heirs',
+    title: 'Heirs — Make your Will online | UAE Estate Planning',
     description: 'Protect your family, assets and wishes in the UAE and beyond. Create your UAE will online in 10–15 minutes. Starting from AED 799.',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Covenant — UAE Estate Planning for Expats' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Heirs — UAE Estate Planning for Expats' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Covenant — Make your Will online | UAE Estate Planning',
+    title: 'Heirs — Make your Will online | UAE Estate Planning',
     description: 'Protect your family, assets and wishes in the UAE. Create your UAE will online in 10–15 minutes. From AED 799.',
     images: ['/og-image.png'],
   },

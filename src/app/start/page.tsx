@@ -209,7 +209,7 @@ export default function StartPage() {
         </div>
         <div className="relative flex items-center justify-center px-6 py-5">
           <Link href="/" className="select-none font-serif text-[26px] font-semibold tracking-tight text-brand-navy">
-            covenant
+            heirs
           </Link>
           <button
             type="button"

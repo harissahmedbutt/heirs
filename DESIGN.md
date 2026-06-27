@@ -1,6 +1,6 @@
-# Covenant — Design Language
+# Heirs — Design Language
 
-This document defines the visual and interaction system for Covenant. It is the
+This document defines the visual and interaction system for Heirs. It is the
 single source of truth for how the product looks, moves, and feels. The goal is a
 calm, premium, **trust-first** experience: estate planning is a serious, emotional
 decision, so the interface stays quiet and editorial and lets warmth come from
@@ -97,7 +97,7 @@ Loaded via `next/font` in `app/layout.tsx`; exposed as CSS variables and mapped 
 ### Navbar (`Navbar.tsx`)
 Transparent with **white** wordmark/links while over the hero; on scroll it collapses into
 a **floating white pill** (`useScrolled`) with ink text and a black "Start Your Will" pill.
-The wordmark is the lowercase serif `covenant`.
+The wordmark is the lowercase serif `heirs`.
 
 ### Hero (`Hero.tsx`)
 Full-bleed photograph, dark left/bottom gradient, white serif headline + subcopy positioned
@@ -135,7 +135,7 @@ Light `brand-cream-warm`. Lowercase serif wordmark + disclaimer on the left; "Se
 
 ### Start Your Will — conversational form (`app/start/page.tsx`)
 The questionnaire is a **chat**, not a form:
-- Minimal header: segmented progress bar, centred `covenant` wordmark, restart icon.
+- Minimal header: segmented progress bar, centred `heirs` wordmark, restart icon.
 - An assistant ("Layla") avatar appears **only on the active question**; answered turns
   collapse into greyed history.
 - Assistant messages **stream in character-by-character** with a blinking caret; answer
@@ -170,7 +170,7 @@ and disable under `prefers-reduced-motion`.
 - Photos run **full-bleed** in the hero, "How it works", and final CTA.
 - Over any photo, apply a dark gradient (heavier on the side the text sits) so white serif
   text stays legible.
-- Replace placeholder imagery with **licensed** Covenant photography before production.
+- Replace placeholder imagery with **licensed** Heirs photography before production.
 
 ---
 

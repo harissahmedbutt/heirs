@@ -48,3 +48,6 @@ shot*.mjs
 
 # dev email output (written by the dev mailer)
 /mail/
+
+# Claude Code memory / session files (personal, not project source)
+/.claude/

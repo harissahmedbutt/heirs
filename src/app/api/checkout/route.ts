@@ -35,7 +35,7 @@ export async function POST() {
   const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'
   const intent = await createPaymentIntent({
     amountFils: amountFils + govFeeFils,
-    message: `Covenant — ${plan}`,
+    message: `Heirs — ${plan}`,
     successUrl: `${appUrl}/checkout/complete?intent={PAYMENT_INTENT_ID}`,
     cancelUrl: `${appUrl}/checkout?canceled=1`,
     failureUrl: `${appUrl}/checkout?failed=1`,

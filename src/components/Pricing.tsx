@@ -6,7 +6,7 @@ type Feature = {
 const features: Feature[] = [
   {
     title: 'Assigned expert',
-    description: 'A dedicated Covenant expert from start to registration',
+    description: 'A dedicated Heirs expert from start to registration',
   },
   {
     title: 'English & Arabic',

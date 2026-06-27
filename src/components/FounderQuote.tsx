@@ -51,7 +51,7 @@ export default function FounderQuote() {
             <figcaption className="mt-8 flex items-center gap-3">
               <Image
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80"
-                alt="Covenant founder"
+                alt="Heirs founder"
                 width={40}
                 height={40}
                 className="h-10 w-10 rounded-full object-cover"

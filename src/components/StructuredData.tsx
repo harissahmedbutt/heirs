@@ -1,13 +1,13 @@
 import { FAQS, PLANS, TESTIMONIALS } from '@/constants/data'
 
-const BASE_URL = 'https://covenant.ae'
+const BASE_URL = 'https://heirs.ae'
 
 function buildSchemas() {
   const localBusiness = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
     '@id': `${BASE_URL}/#organization`,
-    name: 'Covenant',
+    name: 'Heirs',
     url: BASE_URL,
     description:
       'Online estate planning platform for expat families in the UAE. UAE wills, home-country wills, power of attorney, and document vault.',
@@ -51,7 +51,7 @@ function buildSchemas() {
   const aggregateRating = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Covenant',
+    name: 'Heirs',
     url: BASE_URL,
     aggregateRating: {
       '@type': 'AggregateRating',

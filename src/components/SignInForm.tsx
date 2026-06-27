@@ -117,7 +117,7 @@ export default function SignInForm() {
       </form>
 
       <p className="mt-8 text-center text-[14px] text-gray-500">
-        New to Covenant?{' '}
+        New to Heirs?{' '}
         <Link href="/auth/sign-up" className="font-medium text-brand-navy underline underline-offset-2 hover:text-brand-navy-mid">
           Create an account
         </Link>

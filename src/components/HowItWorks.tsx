@@ -23,7 +23,7 @@ const STEPS: Step[] = [
     number: '02',
     label: 'Recommendation',
     title: 'Get your recommendation',
-    body: 'Based on your answers, Covenant recommends what protection to put in place. For most people, that starts with a UAE will. If a power of attorney or a coordinated home-country will would be useful, we explain why and show how it fits into your plan.',
+    body: 'Based on your answers, Heirs recommends what protection to put in place. For most people, that starts with a UAE will. If a power of attorney or a coordinated home-country will would be useful, we explain why and show how it fits into your plan.',
   },
   {
     number: '03',
@@ -35,7 +35,7 @@ const STEPS: Step[] = [
     number: '04',
     label: 'Support',
     title: 'Human support throughout',
-    body: 'You are assigned a Covenant expert who manages your case, answers questions and tells you what is needed next. You can track progress in your dashboard at any time. You are not left to figure out the process alone.',
+    body: 'You are assigned a Heirs expert who manages your case, answers questions and tells you what is needed next. You can track progress in your dashboard at any time. You are not left to figure out the process alone.',
   },
   {
     number: '05',
@@ -51,7 +51,7 @@ const FAQS: Faq[] = [
   {
     question: 'Is my data secure?',
     answer:
-      'Yes. Everything you share is encrypted in transit and at rest, and your finished documents live in a secure Covenant Vault. You decide who can access them.',
+      'Yes. Everything you share is encrypted in transit and at rest, and your finished documents live in a secure Heirs Vault. You decide who can access them.',
   },
   {
     question: 'Can I include crypto and digital accounts?',
@@ -59,9 +59,9 @@ const FAQS: Faq[] = [
       'Absolutely. List your crypto holdings, exchange accounts and other digital assets, and record where the keys, passwords and access details can be safely found.',
   },
   {
-    question: 'Who is Covenant best for?',
+    question: 'Who is Heirs best for?',
     answer:
-      'Covenant is built for expats and cross-border families in the UAE — people whose assets and loved ones span more than one country and who want clear, court-ready protection.',
+      'Heirs is built for expats and cross-border families in the UAE — people whose assets and loved ones span more than one country and who want clear, court-ready protection.',
   },
 ]
 

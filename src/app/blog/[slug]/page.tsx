@@ -9,7 +9,7 @@ import Footer from '@/components/Footer'
 
 export const dynamic = 'force-dynamic'
 
-const BASE_URL = 'https://covenant.ae'
+const BASE_URL = 'https://heirs.ae'
 
 async function getArticle(slug: string, allowDraft: boolean) {
   const a = await prisma.article.findUnique({ where: { slug } })
@@ -73,7 +73,7 @@ export default async function ArticlePage({
       datePublished: published.toISOString(),
       dateModified: a.updatedAt.toISOString(),
       author: { '@type': 'Organization', name: a.author },
-      publisher: { '@type': 'Organization', name: 'Covenant', url: BASE_URL },
+      publisher: { '@type': 'Organization', name: 'Heirs', url: BASE_URL },
       mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/blog/${a.slug}` },
       keywords: tags.join(', '),
     },
@@ -110,7 +110,7 @@ export default async function ArticlePage({
       <header className="border-b border-black/5">
         <div className="mx-auto flex max-w-2xl items-center justify-between px-6 py-5">
           <Link href="/" className="font-serif text-2xl font-semibold text-brand-navy">
-            covenant
+            heirs
           </Link>
           <Link href="/blog" className="text-sm text-brand-navy/60 underline underline-offset-2">
             All guides
@@ -167,7 +167,7 @@ export default async function ArticlePage({
         </div>
 
         <p className="mt-10 text-center text-xs text-brand-navy/40">
-          This guide is general information, not legal advice. Covenant is not a law firm.
+          This guide is general information, not legal advice. Heirs is not a law firm.
         </p>
       </main>
 

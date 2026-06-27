@@ -52,7 +52,7 @@ export default function Navbar({ overHero = true }: { overHero?: boolean }) {
             dark ? 'text-brand-navy' : 'text-white'
           }`}
         >
-          covenant
+          heirs
         </Link>
 
         {/* Desktop links */}
@@ -107,7 +107,7 @@ export default function Navbar({ overHero = true }: { overHero?: boolean }) {
               onClick={() => setOpen(false)}
               className="select-none font-serif text-[28px] font-semibold tracking-tight text-brand-navy"
             >
-              covenant
+              heirs
             </Link>
             <button
               type="button"

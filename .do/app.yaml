@@ -1,18 +1,18 @@
-# DigitalOcean App Platform spec for Covenant.
+# DigitalOcean App Platform spec for Heirs.
 #
 # How to use:
-#   1. In DO: Create App → GitHub → wolfofclaude/covenant, branch main.
+#   1. In DO: Create App → GitHub → harissahmedbutt/heirs, branch main.
 #      (Or import this file: it defines the service, a dev Postgres, and a migration job.)
 #   2. Set INSTANCE COUNT to 1 (not 2 — that's what made it $24).
 #   3. Add the SECRET env values in the dashboard: AUTH_SECRET (run: openssl rand -base64 32),
 #      TOGETHER_API_KEY, and later ZIINA_API_KEY / RESEND_API_KEY / AUTH_GOOGLE_* .
 #   4. Deploy. The pre-deploy job runs `prisma db push` to create tables.
-name: covenant
+name: heirs
 region: fra
 services:
   - name: web
     github:
-      repo: wolfofclaude/covenant
+      repo: harissahmedbutt/heirs
       branch: main
       deploy_on_push: true
     source_dir: /
@@ -25,7 +25,7 @@ services:
     envs:
       - key: DATABASE_URL
         scope: RUN_AND_BUILD_TIME
-        value: ${covenant-db.DATABASE_URL}
+        value: ${heirs-db.DATABASE_URL}
       - key: NEXT_PUBLIC_APP_URL
         scope: RUN_AND_BUILD_TIME
         value: ${APP_URL}
@@ -45,7 +45,7 @@ jobs:
   - name: migrate
     kind: PRE_DEPLOY
     github:
-      repo: wolfofclaude/covenant
+      repo: harissahmedbutt/heirs
       branch: main
     source_dir: /
     environment_slug: node-js
@@ -54,10 +54,10 @@ jobs:
     envs:
       - key: DATABASE_URL
         scope: RUN_TIME
-        value: ${covenant-db.DATABASE_URL}
+        value: ${heirs-db.DATABASE_URL}
 
 databases:
-  - name: covenant-db
+  - name: heirs-db
     engine: PG
     version: "16"
     production: false

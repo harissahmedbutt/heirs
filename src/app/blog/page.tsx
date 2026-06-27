@@ -5,15 +5,15 @@ import Footer from '@/components/Footer'
 
 export const dynamic = 'force-dynamic'
 
-const BASE_URL = 'https://covenant.ae'
+const BASE_URL = 'https://heirs.ae'
 
 export const metadata: Metadata = {
   title: 'Guides — UAE Wills & Estate Planning',
   description:
-    'Clear, up-to-date guides on UAE wills, inheritance law, guardianship and estate planning for expats — from Covenant.',
+    'Clear, up-to-date guides on UAE wills, inheritance law, guardianship and estate planning for expats — from Heirs.',
   alternates: { canonical: '/blog' },
   openGraph: {
-    title: 'Covenant Guides — UAE Wills & Estate Planning',
+    title: 'Heirs Guides — UAE Wills & Estate Planning',
     description: 'Guides on UAE wills, inheritance law and estate planning for expats.',
     url: `${BASE_URL}/blog`,
     type: 'website',
@@ -48,7 +48,7 @@ export default async function BlogIndexPage() {
       <header className="border-b border-black/5">
         <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-5">
           <Link href="/" className="font-serif text-2xl font-semibold text-brand-navy">
-            covenant
+            heirs
           </Link>
           <Link href="/start" className="btn-primary !py-2 text-sm">
             Start your will

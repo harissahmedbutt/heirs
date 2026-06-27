@@ -1,4 +1,4 @@
-/* ── Content (local consts — adapted for Covenant) ── */
+/* ── Content (local consts — adapted for Heirs) ── */
 
 type QuoteItem = { kind: 'quote'; name: string; quote: string }
 type StatItem = { kind: 'stat' }
@@ -6,13 +6,13 @@ type Item = QuoteItem | StatItem
 
 const TESTIMONIALS: QuoteItem[] = [
   { kind: 'quote', name: 'Tom', quote: 'I love the service so far. Very relevant to many expats in the UAE.' },
-  { kind: 'quote', name: 'Michael', quote: 'The process was very straightforward. I would refer Covenant to my friends.' },
+  { kind: 'quote', name: 'Michael', quote: 'The process was very straightforward. I would refer Heirs to my friends.' },
   { kind: 'quote', name: 'Ken', quote: 'Great Service and Great Value.' },
   { kind: 'quote', name: 'Nori', quote: 'Very fast and efficient thanks to them.' },
   { kind: 'quote', name: 'Beat', quote: 'I just had the session with ADJD via Webex. It is all done now.' },
   { kind: 'quote', name: 'Phil', quote: 'Smooth, responsive, efficient and cost effective in comparison with alternative services.' },
   { kind: 'quote', name: 'Alan', quote: 'The convenience and cost for our situation made it attractive. The process has been very easy.' },
-  { kind: 'quote', name: 'Jon', quote: 'I reviewed the online market and Covenant came out the best service.' },
+  { kind: 'quote', name: 'Jon', quote: 'I reviewed the online market and Heirs came out the best service.' },
 ]
 
 /* Build the strip with one black stat card inserted at the third position. */

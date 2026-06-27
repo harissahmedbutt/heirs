@@ -18,7 +18,7 @@ export default async function WillDetailsPage() {
       <header className="border-b border-black/5">
         <div className="mx-auto flex max-w-2xl items-center justify-between px-6 py-5">
           <Link href="/" className="font-serif text-2xl font-semibold text-brand-navy">
-            covenant
+            heirs
           </Link>
           <Link href="/dashboard" className="text-sm text-brand-navy/60 underline underline-offset-2 hover:text-brand-navy">
             Back to dashboard

@@ -1,5 +1,5 @@
 const DISCLAIMER =
-  'Covenant is an estate-planning platform built for expats and cross-border lives. We help customers understand what protection may be relevant for their situation and guide them through the process. Covenant is not a law firm and does not provide legal advice.'
+  'Heirs is an estate-planning platform built for expats and cross-border lives. We help customers understand what protection may be relevant for their situation and guide them through the process. Heirs is not a law firm and does not provide legal advice.'
 
 const FOOTER_LINKS: ReadonlyArray<{
   title: string
@@ -35,9 +35,9 @@ export default function Footer() {
             <a
               href="/"
               className="font-serif text-3xl lowercase tracking-tight text-brand-navy"
-              aria-label="Covenant home"
+              aria-label="Heirs home"
             >
-              covenant
+              heirs
             </a>
             <p className="mt-6 max-w-md text-[14px] leading-relaxed text-gray-500">
               {DISCLAIMER}
@@ -70,7 +70,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-16 flex flex-col gap-2 border-t border-black/10 pt-8 text-[13px] text-gray-500">
-          <p>© 2026 Covenant. All rights reserved.</p>
+          <p>© 2026 Heirs. All rights reserved.</p>
         </div>
       </div>
     </footer>
