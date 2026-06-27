@@ -47,7 +47,7 @@ export async function GET(
   const pdfBytes = await downloadDocument(doc.storageKey)
 
   const filename = `${doc.kind}.pdf`
-  return new Response(pdfBytes, {
+  return new Response(new Uint8Array(pdfBytes), {
     headers: {
       'Content-Type': 'application/pdf',
       'Content-Disposition': `attachment; filename="${filename}"`,
