@@ -1,6 +1,6 @@
-# Covenant
+# Heirs
 
-Covenant is a UAE estate-planning platform — a calm, trust-first product that helps
+Heir is a UAE estate-planning platform — a calm, trust-first product that helps
 people create a legally sound will for assets in the UAE. The experience is editorial
 and quiet by design; estate planning is a serious, emotional decision, so the interface
 stays out of the way. See [`DESIGN.md`](DESIGN.md) for the full design language.
@@ -43,11 +43,6 @@ npx prisma migrate dev
 npm run dev
 ```
 
-The app runs at [http://localhost:3000](http://localhost:3000).
-
-> **Note:** On some macOS setups `next dev` can hang during network-host detection.
-> If the server starts but never binds, run it with an explicit host:
-> `npx next dev -H 127.0.0.1 -p 3000`.
 
 ## Scripts
 
